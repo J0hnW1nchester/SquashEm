@@ -1,0 +1,133 @@
+HTML:
+
+<section id="testimonials-page">
+      <div id="testimonials-container">
+        <div id="testimonial-title">
+          <h1>Reviews that speak volumes.</h1>
+          <h4>
+            Don't just take our word for it, see what people have to say about
+            it.
+          </h4>
+        </div>
+        <!-- *...................... -->
+        <div class="testimonial" id="testimonial-1">
+          <p>YOUR TESTIMONIAL HERE</p>
+        </div>
+        <!-- *............................. -->
+        <div class="testimonial" id="testimonial-2">
+          <!-- <div class="testimonial-img"></div> -->
+          <img src="/img/BiancaTestimonial.jpg" alt="" />
+          <p>
+            If you're having problems with mosquitoes, John is the right guy!
+            <br />
+            <br />
+            His exterminator services are high quality! I was tired of those
+            mosquitoes in my house and now they're all gone! John is also very
+            friendly and attentive, what makes his visit a real pleasure.
+            <br />
+            <br />
+            I am very satisfied with what that man can do, and will definitely
+            ask for his services again in the future. Highly recommended!
+          </p>
+        </div>
+        <!--*..............................  -->
+        <div class="testimonial" id="testimonial-3">
+          <p>YOUR TESTIMONIAL HERE</p>
+        </div>
+        <!-- *................................. -->
+      </div>
+    </section>
+
+
+    CSS:
+
+#testimonials-page {
+  font-family: 'Roboto';
+  background-color: #333;
+  background: url(/img/TestimonialBackground.jpeg) no-repeat center center/cover;
+}
+
+#testimonials-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-row-gap: -20px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 90vw;
+  margin-inline: auto;
+
+  #testimonial-title {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    height: auto;
+    width: auto;
+    font-size: 45px;
+    /* border: 1px solid #fff; */
+
+    h4 {
+      font-size: 30px;
+      margin: 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+#testimonial-1 {
+  text-align: center;
+}
+
+.testimonial {
+  padding: 20px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 1.3;
+  background: rgba(0, 0, 0, 0.3);
+  /* border: 1px solid #fff; */
+
+  img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 750px;
+  height: 200px;
+  border-radius: 5px;
+  padding: 0px 5px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 110px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #fff; */
+
+  /* .testimonial-img {
+    background: url(/img/BiancaTestimonial.jpg) no-repeat center center/cover;
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    margin: 20px;
+  } */
+}
+
+#testimonial-3 {
+  text-align: center;
+}
+
+/* #testimonial-1 {
+}
+#testimonial-2 {
+}
+#testimonial-3 {
+} */
+

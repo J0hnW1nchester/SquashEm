@@ -1,0 +1,875 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* + HIDES THE SCROLLBAR BUT LEAVES THE ABILITY TO SCROLL*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ! ...............OVERLAY............ */
+/* #section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+} */
+
+/* ! .............UTILITIES............... */
+.container {
+  font-family: 'Roboto';
+  display: flex;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.trademark-text {
+  font-family: 'Roboto';
+  /* font-family: 'Lacquer'; */
+}
+
+.trademark-symbol-text {
+  font-family: 'Montserrat';
+}
+
+/* !.................LANDING PAGE............. */
+#landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/LandingPageBackground.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+#t-box {
+  display: flex;
+  width: 45vw;
+  height: 7vw;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  position: relative;
+  border-radius: 5px;
+  cursor: default;
+
+  #trademark-symbol {
+    font-family: 'Montserrat';
+    position: absolute;
+    font-size: 40px;
+    margin-top: 7px;
+  }
+}
+
+/* * ................NAVBAR............. */
+.navbar {
+  font-family: 'Roboto';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  font-size: 25px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+  /* border: 1px solid #333; */
+
+  a {
+    color: #333;
+    padding: 20px 30px;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      border-bottom: #fff 2px solid;
+    }
+
+    #lore &:hover {
+      border-bottom: #fff 2px solid;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+}
+
+/* ! .....................ABOUT SECTION............. */
+#about-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+  color: #333;
+  background: url(/img/SleepingLady.jpg) no-repeat center center/cover;
+}
+
+#about-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+  color: #333;
+  padding: 50px;
+  line-height: 1.3;
+
+  h2 {
+    /* border: 1px solid #333; */
+    padding: 0px 10px;
+    width: 750px;
+    color: #707070;
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  h1 {
+    /* border: 1px solid #333; */
+    padding: 10px;
+    width: 750px;
+    font-size: 70px;
+    text-align: left;
+  }
+
+  p {
+    padding: 10px;
+    width: 750px;
+    color: #707070;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 450;
+    line-height: 1.5;
+    /* border: 1px solid #333; */
+  }
+
+  #lore-link {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 15px;
+    background: #a2cfe3;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 450;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    /* border: 1px solid black; */
+
+    &:hover {
+      background: #82bfd9;
+    }
+  }
+
+  #media-lore-link {
+    display: none;
+  }
+}
+
+/* ! .......................TEAM SECTION............. */
+/* #team-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+  background: url(/img/TeamBackground.jpg) no-repeat center center/cover;
+}
+
+#team-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
+  line-height: 1.2;
+
+  h2 {
+    padding: 10px 10px;
+    width: auto;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+    border-bottom: solid #fff;
+    border-width: 2px 50px;
+  }
+
+  h1 {
+    padding: 10px;
+    width: 750px;
+    font-size: 70px;
+    text-align: center;
+  }
+
+  p {
+    padding: 10px;
+    width: 750px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 450;
+    line-height: 1.5;
+  }
+
+  a {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 15px;
+    background: #a2cfe3;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: #82bfd9;
+    }
+  }
+} */
+
+/* ! .......................TECH SECTION................ */
+/* #tech-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+  color: #333;
+  background: url(/img/TechBackground.jpg) no-repeat center center/cover;
+}
+
+#tech-left {
+  background-color: #051e35;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+  color: #fff;
+  padding: 50px;
+  line-height: 1.3;
+
+  h2 {
+    padding: 0px 10px;
+    width: 750px;
+    color: #eb9832;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: right;
+  }
+
+  h1 {
+    padding: 10px;
+    width: 750px;
+    font-size: 70px;
+    text-align: right;
+  }
+
+  p {
+    padding: 10px;
+    width: 750px;
+    color: #eb9832;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 450;
+    line-height: 1.5;
+  }
+
+  a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 15px;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 450;
+    cursor: pointer;
+
+    &:hover {
+      background: #c1bebe;
+    }
+  }
+} */
+
+/* !.....................TESTIMONIALS PAGE.................... */
+#testimonials-page {
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+  position: relative;
+  background: url(/img/TestimonialBackground.jpeg) no-repeat center center/cover;
+}
+
+#testimonial-title {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  height: auto;
+  width: auto;
+  font-size: 45px;
+  position: absolute;
+  top: 150px; /* * 15 */
+  margin: 10px;
+
+  h4 {
+    font-size: 30px;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+
+.testimonial-container {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 15px;
+  margin-top: 50px;
+  /* margin: 20px auto; */
+  padding: 50px 80px;
+  max-width: 768px;
+  position: relative;
+
+  .fa-quote {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 28px;
+    position: absolute;
+    top: 48px;
+  }
+
+  .fa-quote-right {
+    left: 40px;
+  }
+
+  .fa-quote-left {
+    right: 40px;
+  }
+
+  .testimonial {
+    line-height: 28px;
+    text-align: justify;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .user-details {
+      margin-left: 10px;
+
+      .username {
+        margin-top: 20px;
+      }
+
+      .location {
+        font-weight: normal;
+        margin: 9px 0px;
+      }
+    }
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  .progress-bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+
+  .fa-quote {
+    display: none;
+  }
+}
+
+/* !.....................CONTACT PAGE.................... */
+#contact-page {
+  font-family: 'Roboto';
+  background: url(/img/ContactBackground.jpg) no-repeat center center/cover;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  #contact-house {
+    display: block;
+    /* margin-top: 290px; */
+    font-size: 80px;
+    /* border: 2px solid black; */
+  }
+
+  #telegram-box {
+    display: flex;
+    align-items: center;
+    margin-top: 230px;
+    color: #333;
+    font-size: 40px;
+    padding: 10px;
+    /* border: 1px solid #333; */
+
+    #contact-telegram {
+      font-size: 70px;
+      padding-right: 20px;
+    }
+  }
+
+  /* *...................CONTACT BOX................... */
+  #nav {
+    /* position: absolute; */
+    /* background-color: #fff; */
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 80px;
+    /* margin-top: 360px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: width 0.6s linear;
+  }
+
+  #nav.active {
+    width: 220px;
+  }
+
+  #nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    transition: width 0.6s linear;
+  }
+
+  #nav.active ul {
+    width: 100%;
+  }
+
+  #nav ul li {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+    z-index: -1;
+  }
+
+  #nav.active ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+    z-index: 1;
+  }
+
+  #nav ul a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 30px;
+    /* cursor: default; */
+  }
+
+  .icon {
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    width: 30px;
+  }
+
+  .icon:focus {
+    outline: 0;
+  }
+
+  .icon .line {
+    background-color: #fff;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+  }
+
+  .icon .line2 {
+    top: auto;
+    bottom: 10px;
+  }
+
+  nav.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+  }
+
+  nav.active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+  }
+
+  /* * .............DROP DOWN MENU................ */
+  .dropdown {
+    background: rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* 120 */
+    color: #fff;
+    cursor: pointer;
+    height: auto;
+    font-size: 50px;
+    line-height: 1.2;
+    /* position: relative; */
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 20px;
+    transition: all 1s;
+
+    transform: perspective(1000px);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background: none;
+      color: #333;
+    }
+
+    .dropdown-menu {
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      text-align: center;
+      visibility: hidden;
+      z-index: -99999;
+      transition: all 0.5s;
+
+      li:first-child {
+        cursor: default;
+      }
+
+      a {
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+
+        &:hover {
+          background: #fff;
+          color: #333;
+        }
+      }
+    }
+
+    &:hover .dropdown-menu {
+      background: rgba(0, 0, 0, 0.3);
+      opacity: 1;
+      visibility: visible;
+      top: 100%;
+      width: 100%;
+      -webkit-transition: all 0.5s, background, 0.5s 0.5s ease-in-out;
+      transition: all 0.5s, background 0.5s 0.5s ease-in-out;
+    }
+  }
+}
+
+/* ! .........................FOOTER...................... */
+#footer {
+  font-family: 'Montserrat';
+  position: absolute;
+  bottom: 0;
+  /* margin-top: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  font-size: 17px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* !.....................LORE PAGE.................... */
+/* #lore {
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  font-family: 'Roboto';
+} */
+
+#lore-body {
+  font-family: 'Roboto';
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: #fff;
+}
+
+#lore-navbar {
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  /* position: relative; */
+  font-size: 20px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+
+  a {
+    color: #333;
+    padding: 20px 20px;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      border-bottom: #fff 2px solid;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+}
+/* *.............BLURRY LOAD STUFF............... */
+.bg {
+  background: url(/img/LoreBackground.jpg) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* position: absolute; */
+  width: 100vw;
+  height: 100vh;
+  /* z-index: -1; */
+  filter: blur(0px);
+
+  /* +.......LORE BACKGROUND OVERLAY........ */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  /* + ...............LORE TEXT CODE.............. */
+  #lore-text {
+    /* border: 1px solid #fff; */
+    width: 1500px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 450;
+    line-height: 1.5;
+    text-align: center;
+    z-index: 1;
+
+    #bold-text {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    #dedication {
+      font-size: 20px;
+    }
+  }
+}
+
+/* .bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+} */
+
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+  /* border: 1px solid #fff; */
+  position: absolute;
+}
+
+/* !...................MEDIA LORE PAGE.................... */
+#media-lore-container {
+  background: url(/img/LoreBackground.jpg) no-repeat center center/cover;
+  font-family: 'Roboto';
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  /* *.............BACKGROUND OVERLAY............ */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  #media-lore-navbar {
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    font-size: 20px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+
+    a {
+      color: #333;
+      padding: 20px 30px;
+      margin: 0px 15px;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  #media-lore-text {
+    text-align: center;
+    line-height: 1.5;
+    z-index: 1;
+    padding: 15px;
+
+    #media-bold-text {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+/* ! .....................RETURN TO TOP BUTTON.................. */
+#top-btn {
+  width: 50px;
+  height: 50px;
+  bottom: -50px;
+  right: 20px;
+  position: fixed;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #333;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.12), 3px 4px 8px 0px rgba(0, 0, 0, 0.11);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+#top-btn:hover {
+  background-color: #fff;
+}
+
+#top-btn:hover i {
+  padding-top: 5px;
+  color: #333;
+}
+
+#top-btn i {
+  padding-top: 0px;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}

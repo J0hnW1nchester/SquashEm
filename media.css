@@ -1,0 +1,754 @@
+/* !...............LAPTOP 1500px........... */
+@media (max-width: 1500px) {
+  /* *.................LANDING SECTION............. */
+  #t-box {
+    width: 800px;
+    font-size: 45px;
+
+    #trademark-symbol {
+      font-size: 25px;
+      margin-top: 1px;
+    }
+  }
+
+  .navbar {
+    a {
+      padding: 18px 30px;
+    }
+  }
+
+  /* * ............ABOUT SECTION............. */
+  #about-left {
+    text-align: center;
+
+    h1 {
+      text-align: center;
+      width: 700px;
+    }
+
+    p {
+      text-align: center;
+      width: 700px;
+    }
+  }
+
+  .bg #lore-text {
+    width: 1300px;
+    font-size: 22px;
+
+    #bold-text {
+      font-size: 25px;
+    }
+  }
+
+  #testimonial-title {
+    top: 90px;
+  }
+
+  /* * ............CONTACT SECTION............. */
+  #contact-container {
+    #telegram-box {
+      margin-top: 100px;
+    }
+
+    #footer {
+      height: 35px;
+      font-size: 10px;
+    }
+    /* *................ */
+  }
+}
+
+/* !...................NEWER SMARTPHONES HORIZONTAL.................... */
+@media (max-width: 860px) {
+  /* *.................LANDING SECTION............. */
+  #t-box {
+    width: 500px;
+    font-size: 21px;
+
+    #trademark-symbol {
+      font-size: 16px;
+      margin-top: 1px;
+    }
+  }
+
+  .navbar {
+    height: 30px;
+    font-size: 15px;
+
+    a {
+      padding: 5px 20px;
+    }
+  }
+
+  /* * ............ABOUT SECTION............. */
+  #about-right {
+    display: none;
+  }
+
+  #about-left {
+    width: 100vw;
+    text-align: center;
+
+    h2 {
+      width: 650px;
+      font-size: 16px;
+      letter-spacing: 3px;
+      margin-top: 10px;
+    }
+
+    h1 {
+      width: 650px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    p {
+      width: 650px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    #lore-link {
+      display: none;
+    }
+
+    #media-lore-link {
+      display: inline-block;
+      width: 120px;
+      height: auto;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 30px;
+      padding: 15px;
+      background: #a2cfe3;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 450;
+      cursor: pointer;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background: #82bfd9;
+      }
+    }
+  }
+
+  /* *...............MEDIA LORE PAGE................. */
+  #media-lore-container {
+    height: 220vh;
+
+    #media-lore-navbar {
+      font-size: 20px;
+      height: 40px;
+
+      a {
+        padding: 6px 0px;
+
+        &:hover {
+          border-bottom: #fff 2px solid;
+        }
+      }
+    }
+
+    #media-lore-text {
+      font-size: 16px;
+    }
+  }
+
+  /* * ............TESTIMONIALS SECTION............. */
+  #testimonial-title {
+    top: 40px;
+    font-size: 25px;
+    margin: 0;
+
+    h4 {
+      margin-top: 9px;
+      font-size: 17px;
+    }
+  }
+
+  .testimonial-container {
+    margin-top: 100px;
+    font-size: 15px;
+    padding: 20px 30px;
+
+    .testimonial {
+      line-height: 20px;
+    }
+
+    img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+
+    .fa-quote {
+      font-size: 15px;
+      top: 25px;
+    }
+
+    .fa-quote-right {
+      left: 10px;
+    }
+
+    .fa-quote-left {
+      right: 10px;
+    }
+
+    .progress-bar {
+      margin-bottom: 5px;
+    }
+  }
+
+  /* * ............CONTACT SECTION............. */
+  #contact-container {
+    #telegram-box {
+      margin-top: 40px;
+
+      h4 {
+        text-align: center;
+        font-size: 25px;
+        padding: 0px;
+      }
+
+      #contact-telegram {
+        font-size: 50px;
+        padding-right: 8px;
+      }
+    }
+
+    .dropdown {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #nav {
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+    }
+
+    #nav.active {
+      width: 150px;
+    }
+
+    #nav ul a {
+      font-size: 20px;
+    }
+  }
+
+  #footer {
+    height: 30px;
+    font-size: 8px;
+  }
+
+  /* *.................... */
+}
+
+/* !..................TABLETS VERTICAL.................... */
+@media (max-width: 800px) {
+  /* *.................LANDING SECTION............. */
+  #t-box {
+    width: 500px;
+    font-size: 25px;
+
+    #trademark-symbol {
+      font-size: 20px;
+      margin-top: 7px;
+    }
+  }
+
+  .navbar {
+    height: 50px;
+    font-size: 20px;
+
+    a {
+      padding: 12px 20px;
+    }
+  }
+
+  /* * ............ABOUT SECTION............. */
+  #about-right {
+    display: none;
+  }
+
+  #about-left {
+    width: 100vw;
+    text-align: center;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #lore-link {
+      display: none;
+    }
+
+    #media-lore-link {
+      display: inline-block;
+      width: 150px;
+      height: auto;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 30px;
+      padding: 15px;
+      background: #a2cfe3;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 450;
+      cursor: pointer;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+      /* border: 1px solid black; */
+
+      &:hover {
+        background: #82bfd9;
+      }
+    }
+  }
+
+  /* * ............TESTIMONIALS SECTION............. */
+  #testimonial-title {
+    top: 100px;
+  }
+
+  .testimonial-container {
+    font-size: 15px;
+    /* padding: 10px 20px; */
+
+    .fa-quote {
+      font-size: 20px;
+      top: 25px;
+    }
+
+    .fa-quote-right {
+      left: 6px;
+    }
+
+    .fa-quote-left {
+      right: 6px;
+    }
+
+    .progress-bar {
+      margin-bottom: 5px;
+    }
+  }
+
+  /* * ............CONTACT SECTION............. */
+  #contact-container {
+    #telegram-box {
+      margin-top: 110px;
+    }
+
+    .dropdown {
+      font-size: 40px;
+    }
+  }
+
+  #footer {
+    height: 40px;
+
+    font-size: 12px;
+  }
+  /* *............................... */
+}
+
+/* !...................SMARTPHONES HORIZONTAL.................... */
+@media (max-width: 751px) {
+  /* *.................LANDING SECTION............. */
+  #t-box {
+    width: 500px;
+    font-size: 20px;
+
+    #trademark-symbol {
+      font-size: 15px;
+      margin-top: 1px;
+    }
+  }
+
+  .navbar {
+    height: 30px;
+    font-size: 15px;
+
+    a {
+      padding: 5px 20px;
+    }
+  }
+
+  /* * ............ABOUT SECTION............. */
+  #about-right {
+    display: none;
+  }
+
+  #about-left {
+    width: 100vw;
+    text-align: center;
+
+    h2 {
+      width: 650px;
+      font-size: 16px;
+      letter-spacing: 3px;
+      margin-top: 10px;
+    }
+
+    h1 {
+      width: 650px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    p {
+      width: 650px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    #lore-link {
+      display: none;
+    }
+
+    #media-lore-link {
+      display: inline-block;
+      width: 120px;
+      height: auto;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 30px;
+      padding: 15px;
+      background: #a2cfe3;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 450;
+      cursor: pointer;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background: #82bfd9;
+      }
+    }
+  }
+
+  /* *...............MEDIA LORE PAGE................. */
+  #media-lore-container {
+    height: 250vh;
+
+    #media-lore-navbar {
+      font-size: 20px;
+      height: 40px;
+
+      a {
+        padding: 6px 0px;
+
+        &:hover {
+          border-bottom: #fff 2px solid;
+        }
+      }
+    }
+
+    #media-lore-text {
+      font-size: 16px;
+    }
+  }
+
+  /* * ............TESTIMONIALS SECTION............. */
+  #testimonial-title {
+    top: 60px;
+    font-size: 25px;
+    margin: 0;
+
+    h4 {
+      margin-top: 15px;
+      font-size: 17px;
+    }
+  }
+
+  .testimonial-container {
+    margin-top: 110px;
+    font-size: 12px;
+
+    .testimonial {
+      line-height: 18px;
+    }
+
+    img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+
+    .fa-quote {
+      font-size: 15px;
+      top: 25px;
+    }
+
+    .fa-quote-right {
+      left: 10px;
+    }
+
+    .fa-quote-left {
+      right: 10px;
+    }
+
+    .progress-bar {
+      margin-bottom: 5px;
+    }
+  }
+
+  /* * ............CONTACT SECTION............. */
+  #contact-container {
+    #telegram-box {
+      margin-top: 40px;
+      /* padding: 0px; */
+
+      h4 {
+        text-align: center;
+        font-size: 25px;
+        padding: 0px;
+      }
+
+      #contact-telegram {
+        font-size: 50px;
+        padding-right: 8px;
+      }
+    }
+
+    .dropdown {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #nav {
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+    }
+
+    #nav.active {
+      width: 150px;
+    }
+
+    #nav ul a {
+      font-size: 20px;
+    }
+  }
+
+  #footer {
+    height: 30px;
+    font-size: 8px;
+  }
+
+  /* *.................... */
+}
+
+/* !.....................SMARTPHONES VERTICAL.................... */
+@media (max-width: 500px) {
+  /* *.................LANDING SECTION............. */
+  #t-box {
+    width: 300px;
+    height: 50px;
+    font-size: 19px;
+
+    #trademark-symbol {
+      font-size: 12px;
+      margin-top: 2px;
+    }
+  }
+
+  .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    font-size: 15px;
+    z-index: 999;
+
+    a {
+      padding: 15px 1px;
+    }
+  }
+
+  /* * ............ABOUT SECTION............. */
+  #about-right {
+    display: none;
+  }
+
+  #about-left {
+    width: 100vw;
+    text-align: center;
+
+    h2 {
+      font-size: 15px;
+    }
+
+    h1 {
+      width: auto;
+      padding: 5px;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    p {
+      width: auto;
+      padding: 5px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #lore-link {
+      display: none;
+    }
+
+    #media-lore-link {
+      display: inline-block;
+      width: 150px;
+      height: auto;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 30px;
+      padding: 12px;
+      background: #a2cfe3;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 450;
+      cursor: pointer;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background: #82bfd9;
+      }
+    }
+  }
+
+  /* * ............TESTIMONIALS SECTION............. */
+  #testimonial-title {
+    top: 100px;
+    font-size: 25px;
+    margin: 0;
+
+    h4 {
+      margin-top: 15px;
+      font-size: 17px;
+    }
+  }
+
+  .testimonial-container {
+    font-size: 13px;
+
+    .testimonial {
+      line-height: 18px;
+    }
+
+    img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+
+    .fa-quote {
+      font-size: 15px;
+      top: 25px;
+    }
+
+    .fa-quote-right {
+      left: 10px;
+    }
+
+    .fa-quote-left {
+      right: 10px;
+    }
+
+    .progress-bar {
+      margin-bottom: 5px;
+    }
+  }
+
+  /* *...............MEDIA LORE PAGE................. */
+  #media-lore-container {
+    height: 270vh;
+
+    #media-lore-navbar {
+      font-size: 20px;
+      height: 40px;
+
+      a {
+        padding: 6px 0px;
+
+        &:hover {
+          border-bottom: #fff 2px solid;
+        }
+      }
+    }
+
+    #media-lore-text {
+      font-size: 20px;
+    }
+  }
+
+  /* * ............CONTACT SECTION............. */
+  #contact-container {
+    #telegram-box {
+      margin-top: 120px;
+
+      h4 {
+        text-align: center;
+        font-size: 25px;
+        padding: 0px;
+      }
+
+      #contact-telegram {
+        font-size: 50px;
+        padding-right: 8px;
+      }
+    }
+
+    .dropdown {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #nav {
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+    }
+
+    #nav.active {
+      width: 150px;
+    }
+
+    #nav ul a {
+      font-size: 20px;
+    }
+  }
+
+  #footer {
+    height: 30px;
+    font-size: 8px;
+  }
+
+  /* *..................... */
+}
