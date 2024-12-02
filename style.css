@@ -785,13 +785,13 @@ body::-webkit-scrollbar {
 
 /* !...................MEDIA LORE PAGE.................... */
 #media-lore-container {
-  background: url(/img/LoreBackground.jpg) no-repeat center center/cover;
+  background: url(/img/LoreBackground.webp) no-repeat center center/cover;
   font-family: 'Roboto';
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   color: #fff;
 
@@ -830,9 +830,11 @@ body::-webkit-scrollbar {
 
   #media-lore-text {
     text-align: center;
-    line-height: 1.5;
+    /* font-size: 30px; */
+    line-height: 1.7;
     z-index: 1;
     padding: 15px;
+    margin-top: 70px;
 
     #media-bold-text {
       font-size: 20px;
