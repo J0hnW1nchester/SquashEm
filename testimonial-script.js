@@ -9,13 +9,13 @@ const testimonials = [
   {
     name: 'Pinkianca',
     location: 'Pufftown, Brazil',
-    photo: '/img/BiancaTestimonial.jpg',
+    photo: '/img/BiancaTestimonial.webp',
     text: "If you're having problems with mosquitoes, John is the right guy! His exterminator services are high quality! I was tired of those mosquitoes in my house and now they're all gone! John is also very friendly and attentive, what makes his visit a real pleasure. I am very satisfied with what that man can do, and will definitely ask for his services again in the future. Highly recommended!",
   },
   {
     name: 'Juonis',
     location: 'Vilnius, Lithuania',
-    photo: '/img/JonasEMO.jpg',
+    photo: '/img/JonasEMO.webp',
     text: 'Yeah I write reviews for my own company so what!',
   },
 ];
