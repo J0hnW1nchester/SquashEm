@@ -18,6 +18,12 @@ const testimonials = [
     photo: '/img/JonasEMO.webp',
     text: 'Yeah I write reviews for my own company so what!',
   },
+  {
+    name: 'Lily',
+    location: 'Hong Kong',
+    photo: '/img/LilyTestimonial.webp',
+    text: 'I am a mum of three and I was looking for a "mosquito hunter" as my children are very young and they cannot inhale electric mosquito repellent. Luckily, God brought me John, who is an excellent hunter with a well-deserved reputation. Now, my children and I can sleep peacefully. I cannot tell you how much I appreciate John and wish he could help more people!',
+  },
 ];
 
 let idx = 1;
