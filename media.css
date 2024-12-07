@@ -13,7 +13,7 @@
 
   /* * ............ABOUT SECTION............. */
   #about-left {
-    text-align: center;
+    text-align: left;
 
     h2 {
       width: 430px;
@@ -21,13 +21,13 @@
     }
 
     h1 {
-      text-align: center;
+      text-align: left;
       width: 430px;
       font-size: 45px;
     }
 
     p {
-      text-align: center;
+      text-align: left;
       width: 440px;
       font-size: 20px;
     }
