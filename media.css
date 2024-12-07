@@ -1,14 +1,98 @@
-/* @media (360px < width <= 567px) */
-
-/* !...............LAPTOP 1500px........... */
-@media (width < 1500px) {
+/* !...............FULL DESKTOP................. */
+@media only screen and (1300px <= width < 2500px) {
   /* *.................LANDING SECTION............. */
   #t-box {
     width: 800px;
-    font-size: 45px;
+    font-size: 46px;
 
     #trademark-symbol {
-      font-size: 25px;
+      font-size: 23px;
+      margin-top: 1px;
+    }
+  }
+
+  /* * ............ABOUT SECTION............. */
+  #about-left {
+    text-align: center;
+
+    h2 {
+      width: 430px;
+      font-size: 23px;
+    }
+
+    h1 {
+      text-align: center;
+      width: 430px;
+      font-size: 45px;
+    }
+
+    p {
+      text-align: center;
+      width: 440px;
+      font-size: 20px;
+    }
+
+    #lore-link {
+      display: none;
+    }
+
+    #media-lore-link {
+      display: inline-block;
+      width: 120px;
+      height: auto;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 30px;
+      padding: 15px;
+      background: #a2cfe3;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 450;
+      cursor: pointer;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background: #82bfd9;
+      }
+    }
+  }
+
+  /* *...............MEDIA LORE PAGE................. */
+  #media-lore-container {
+    height: 110vh;
+
+    #media-lore-navbar {
+      font-size: 20px;
+      height: 40px;
+
+      a {
+        padding: 6px 0px;
+
+        &:hover {
+          border-bottom: #fff 2px solid;
+        }
+      }
+    }
+
+    #media-lore-text {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/* !...............LARGE TABLET / SMALL LAPTOP................. */
+@media only screen and (1024px <= width < 1300px) {
+  /* *.................LANDING SECTION............. */
+  #t-box {
+    width: 800px;
+    font-size: 37px;
+
+    #trademark-symbol {
+      font-size: 20px;
       margin-top: 1px;
     }
   }
@@ -23,28 +107,78 @@
   #about-left {
     text-align: center;
 
+    h2 {
+      width: 430px;
+      font-size: 23px;
+    }
+
     h1 {
       text-align: center;
-      width: 700px;
+      width: 430px;
+      font-size: 45px;
     }
 
     p {
       text-align: center;
-      width: 700px;
+      width: 440px;
+      font-size: 20px;
+    }
+
+    #lore-link {
+      display: none;
+    }
+
+    #media-lore-link {
+      display: inline-block;
+      width: 120px;
+      height: auto;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 30px;
+      padding: 15px;
+      background: #a2cfe3;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 450;
+      cursor: pointer;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background: #82bfd9;
+      }
     }
   }
 
-  .bg #lore-text {
-    width: 1300px;
-    font-size: 22px;
+  /* *...............MEDIA LORE PAGE................. */
+  #media-lore-container {
+    height: 110vh;
 
-    #bold-text {
-      font-size: 25px;
+    #media-lore-navbar {
+      font-size: 20px;
+      height: 40px;
+
+      a {
+        padding: 6px 0px;
+
+        &:hover {
+          border-bottom: #fff 2px solid;
+        }
+      }
+    }
+
+    #media-lore-text {
+      p {
+        font-size: 16px;
+      }
     }
   }
 
+  /* * ............TESTIMONIALS SECTION............. */
   #testimonial-title {
     top: 90px;
+    font-size: 35px;
   }
 
   /* * ............CONTACT SECTION............. */
@@ -57,12 +191,12 @@
       height: 35px;
       font-size: 10px;
     }
-    /* *................ */
   }
+  /* *................ */
 }
 
-/* !...................NEWER SMARTPHONES HORIZONTAL.................... */
-@media (width < 860px) {
+/* !.....................TABLET.................... */
+@media only screen and (768px <= width < 1024px) {
   /* *.................LANDING SECTION............. */
   #t-box {
     width: 500px;
@@ -75,11 +209,11 @@
   }
 
   .navbar {
-    height: 30px;
-    font-size: 15px;
+    height: 40px;
+    font-size: 18px;
 
     a {
-      padding: 5px 20px;
+      padding: 8px 20px;
     }
   }
 
@@ -140,7 +274,7 @@
 
   /* *...............MEDIA LORE PAGE................. */
   #media-lore-container {
-    height: 220vh;
+    height: 120vh;
 
     #media-lore-navbar {
       font-size: 20px;
@@ -156,13 +290,15 @@
     }
 
     #media-lore-text {
-      font-size: 16px;
+      p {
+        font-size: 16px;
+      }
     }
   }
 
   /* * ............TESTIMONIALS SECTION............. */
   #testimonial-title {
-    top: 40px;
+    top: 90px;
     font-size: 25px;
     margin: 0;
 
@@ -210,7 +346,7 @@
   /* * ............CONTACT SECTION............. */
   #contact-container {
     #telegram-box {
-      margin-top: 40px;
+      margin-top: 100px;
 
       h4 {
         text-align: center;
@@ -226,7 +362,7 @@
 
     .dropdown {
       text-align: center;
-      font-size: 18px;
+      font-size: 25px;
     }
 
     #nav {
@@ -246,14 +382,14 @@
 
   #footer {
     height: 30px;
-    font-size: 8px;
+    font-size: 10px;
   }
 
   /* *.................... */
 }
 
-/* !..................TABLETS VERTICAL.................... */
-@media (width < 800px) {
+/* !.....................LARGE LANDSCAPE.................... */
+@media only screen and (666px <= width < 768px) {
   /* *.................LANDING SECTION............. */
   #t-box {
     width: 500px;
@@ -288,11 +424,12 @@
     }
 
     h1 {
-      font-size: 50px;
+      font-size: 44px;
       text-align: center;
     }
 
     p {
+      width: 650px;
       font-size: 20px;
       text-align: center;
     }
@@ -321,6 +458,30 @@
 
       &:hover {
         background: #82bfd9;
+      }
+    }
+  }
+
+  /* *...............MEDIA LORE PAGE................. */
+  #media-lore-container {
+    height: 126vh;
+
+    #media-lore-navbar {
+      font-size: 20px;
+      height: 40px;
+
+      a {
+        padding: 6px 0px;
+
+        &:hover {
+          border-bottom: #fff 2px solid;
+        }
+      }
+    }
+
+    #media-lore-text {
+      p {
+        font-size: 16px;
       }
     }
   }
@@ -371,7 +532,7 @@
     }
 
     .dropdown {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
 
@@ -383,8 +544,8 @@
   /* *............................... */
 }
 
-/* !...................SMARTPHONES HORIZONTAL.................... */
-@media (width < 751px) {
+/* !.....................SMALL LANDSCAPE.................... */
+@media only screen and (568px <= width < 666px) {
   /* *.................LANDING SECTION............. */
   #t-box {
     width: 500px;
@@ -397,11 +558,11 @@
   }
 
   .navbar {
-    height: 30px;
+    height: 40px;
     font-size: 15px;
 
     a {
-      padding: 5px 20px;
+      padding: 9px 20px;
     }
   }
 
@@ -428,7 +589,7 @@
     }
 
     p {
-      width: 650px;
+      width: 555px;
       font-size: 16px;
       text-align: center;
     }
@@ -462,7 +623,7 @@
 
   /* *...............MEDIA LORE PAGE................. */
   #media-lore-container {
-    height: 250vh;
+    height: 140vh;
 
     #media-lore-navbar {
       font-size: 20px;
@@ -478,13 +639,15 @@
     }
 
     #media-lore-text {
-      font-size: 16px;
+      p {
+        font-size: 16px;
+      }
     }
   }
 
   /* * ............TESTIMONIALS SECTION............. */
   #testimonial-title {
-    top: 60px;
+    top: 100px;
     font-size: 25px;
     margin: 0;
 
@@ -531,7 +694,7 @@
   /* * ............CONTACT SECTION............. */
   #contact-container {
     #telegram-box {
-      margin-top: 40px;
+      margin-top: 80px;
       /* padding: 0px; */
 
       h4 {
@@ -568,14 +731,14 @@
 
   #footer {
     height: 30px;
-    font-size: 8px;
+    font-size: 9px;
   }
 
   /* *.................... */
 }
 
-/* !.....................SMARTPHONES VERTICAL.................... */
-@media (width < 500px) {
+/* !.....................MOBILE.................... */
+@media only screen and (360px <= width < 568px) {
   /* *.................LANDING SECTION............. */
   #landing-page {
     background: url(/img/LandingPageBackground-m.webp) no-repeat center
@@ -598,7 +761,7 @@
     position: fixed;
     top: 0;
     height: 50px;
-    font-size: 15px;
+    font-size: 14px;
     z-index: 999;
 
     a {
@@ -708,7 +871,7 @@
 
   /* *...............MEDIA LORE PAGE................. */
   #media-lore-container {
-    height: 270vh;
+    height: 185vh;
 
     #media-lore-navbar {
       font-size: 20px;
@@ -724,7 +887,9 @@
     }
 
     #media-lore-text {
-      font-size: 20px;
+      p {
+        font-size: 16px;
+      }
     }
   }
 
@@ -771,7 +936,7 @@
 
   #footer {
     height: 30px;
-    font-size: 8px;
+    font-size: 9px;
   }
 
   /* *..................... */
