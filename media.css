@@ -1,5 +1,7 @@
+/* @media (360px < width <= 567px) */
+
 /* !...............LAPTOP 1500px........... */
-@media (max-width: 1500px) {
+@media (width < 1500px) {
   /* *.................LANDING SECTION............. */
   #t-box {
     width: 800px;
@@ -60,7 +62,7 @@
 }
 
 /* !...................NEWER SMARTPHONES HORIZONTAL.................... */
-@media (max-width: 860px) {
+@media (width < 860px) {
   /* *.................LANDING SECTION............. */
   #t-box {
     width: 500px;
@@ -251,7 +253,7 @@
 }
 
 /* !..................TABLETS VERTICAL.................... */
-@media (max-width: 800px) {
+@media (width < 800px) {
   /* *.................LANDING SECTION............. */
   #t-box {
     width: 500px;
@@ -326,6 +328,14 @@
   /* * ............TESTIMONIALS SECTION............. */
   #testimonial-title {
     top: 100px;
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
   }
 
   .testimonial-container {
@@ -354,6 +364,10 @@
   #contact-container {
     #telegram-box {
       margin-top: 110px;
+
+      h4 {
+        font-size: 35px;
+      }
     }
 
     .dropdown {
@@ -370,7 +384,7 @@
 }
 
 /* !...................SMARTPHONES HORIZONTAL.................... */
-@media (max-width: 751px) {
+@media (width < 751px) {
   /* *.................LANDING SECTION............. */
   #t-box {
     width: 500px;
@@ -561,7 +575,7 @@
 }
 
 /* !.....................SMARTPHONES VERTICAL.................... */
-@media (max-width: 500px) {
+@media (width < 500px) {
   /* *.................LANDING SECTION............. */
   #landing-page {
     background: url(/img/LandingPageBackground-m.webp) no-repeat center
@@ -654,7 +668,8 @@
 
     h4 {
       margin-top: 15px;
-      font-size: 17px;
+      font-size: 16px;
+      width: 375px;
     }
   }
 

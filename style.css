@@ -6,11 +6,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 /* + HIDES THE SCROLLBAR BUT LEAVES THE ABILITY TO SCROLL*/
 body::-webkit-scrollbar {
   display: none;
+  overflow-x: clip;
 }
 
 /* ! ...............OVERLAY............ */
@@ -97,10 +99,6 @@ body::-webkit-scrollbar {
     color: #fff;
 
     &:hover {
-      border-bottom: #fff 2px solid;
-    }
-
-    #lore &:hover {
       border-bottom: #fff 2px solid;
     }
   }
@@ -358,9 +356,9 @@ body::-webkit-scrollbar {
   margin: 10px;
 
   h4 {
-    font-size: 30px;
     margin-top: 15px;
     font-size: 20px;
+    padding: 0px 3px;
   }
 }
 
